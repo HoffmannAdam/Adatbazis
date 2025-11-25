@@ -13,7 +13,7 @@
 
 	SELECT allam, foldresz, terulet
 	FROM orszagok
-	WHERE (foldresz = 'Afrika' OR foldresz = 'Dél-Amerika')
+	WHERE (foldresz LIKE 'Afrika' OR foldresz LIKE 'Dél-Amerika')
 	AND terulet > 500000
 	ORDER BY terulet DESC;
 
@@ -30,7 +30,7 @@
 		   SUM(terulet) AS osszterulet,
 		   SUM(nepesseg) AS ossznepesseg
 	FROM orszagok
-	WHERE foldresz = 'Afrika';
+	WHERE foldresz LIKE 'Afrika';
 
 /* 7. Feladat */
 
