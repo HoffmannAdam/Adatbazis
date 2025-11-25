@@ -53,3 +53,13 @@
 							lakas int);
 
 /* 9. feladat:  */
+
+	SELECT kisterseg,
+		   telepaz,
+		   megnevezes,
+		   rang,
+		   terulet,
+		   nepesseg,
+		   lakas
+	FROM telepules
+	ORDER BY kisterseg, megnevezes;
