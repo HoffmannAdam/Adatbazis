@@ -17,7 +17,7 @@
 /* 4. feladat:  */
 
 	SELECT * FROM `csapat`
-	WHERE `csapat` = 'Magyarország'
+	WHERE `csapat` LIKE 'Magyarország'
 	ORDER BY `ev` ASC;
 
 /* 5. feladat:  */
@@ -45,7 +45,7 @@
 	SELECT c2.csapat AS orszag, c2.ev
 	FROM csapat c1
 	JOIN csapat c2 ON c1.ev = c2.ev
-	WHERE c1.csapat = 'Brazília' AND c1.helyezes = 1
+	WHERE c1.csapat LIKE 'Brazília' AND c1.helyezes = 1
 	AND c2.helyezes = 2
 	ORDER BY c2.ev;
 	

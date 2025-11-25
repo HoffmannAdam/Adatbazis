@@ -20,13 +20,13 @@
 /* 4. feladat:  */
 
 	SELECT * FROM `telepules` 
-	WHERE `rang` = 'közseg' AND `nepesseg` < 1000 
+	WHERE `rang` LIKE 'közseg' AND `nepesseg` < 1000 
 	ORDER BY `nepesseg` ASC;
 
 /* 5. feladat:  */
 
 	SELECT `megnevezes` FROM `telepules` 
-	WHERE `kisterseg` = 'Makói' or `kisterseg` = 'Csongradi'
+	WHERE `kisterseg` LIKE 'Makói' or `kisterseg` LIKE 'Csongradi'
 	ORDER BY `terulet` ASC LIMIT 1;
 
 /* 6. feladat:  */
