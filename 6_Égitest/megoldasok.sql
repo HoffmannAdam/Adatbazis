@@ -16,7 +16,7 @@
 /* 3. feladat:  */
 
 	SELECT `elnevezes` FROM `bolygohold`
-	WHERE `holkering` =  'Neptunusz' OR 'Szaturnusz'
+	WHERE `holkering` LIKE  'Neptunusz' OR 'Szaturnusz'
 	AND `felfedezeseve` > 1945;
 
 /* 4. feladat:  */
@@ -41,7 +41,7 @@
 		   tavolsag,
 		   felfedezeseve
 	FROM bolygohold
-	WHERE holkering = 'Nap';
+	WHERE holkering LIKE 'Nap';
 
 /* 7. feladat:  */
 
