@@ -42,3 +42,4 @@
 
 	ALTER TABLE orszagok
 	ADD COLUMN Nepsuruseg DECIMAL(10,2);
+	UPDATE orszagok SET Nepsuruseg = nepesseg*1000/terulet;
